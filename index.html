@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="mapStyles.css" type="text/css">
+  </head>
+	
+	
+  <body>
+	  
+    <div class="container">
+		
+      <div class="options-box">
+		  
+        <h1>Deep Dish Pizza places in Chicago</h1>
+        <div>
+			
+          <input id="show-listings" type="button" value="Show Listings">
+          <input id="hide-listings" type="button" value="Hide Listings">
+        
+		</div>
+		  <hr/>
+	  
+		  <div>
+			
+			  <h2> Search Pizza Place</h2>
+			  <select id="pizzaPlace" data-bind="text: pizzaPlace" >
+				  <option></option>
+				  <option value="0">Atino's Pizza</option>
+				  <option value="1">Bellonas Pizza</option>
+				  <option value="2">Dimo's Pizza</option>
+				  <option value="3">Gino's East</option>
+				  <option value="4">Lou Malnati's Pizzeria</option>
+				  <option value="5">Pequod's Pizza</option>
+			  </select>
+
+			  <input id="viewPizzaPlace" type="submit" value="View Pizza Place">
+		  
+		  </div>
+		</div>
+      
+		<div id="map"></div>
+    
+	  </div>
+	  
+	  
+    <script type="text/javascript" src="mapScript.js"></script>
+    <script async defer
+        src=
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyC5oGO_Xv9Gvthz8qorygq6W9RGRmDkTe8&libraries=geometry&v=3&callback=initMap">
+    </script>
+
+  </body>
+</html>
